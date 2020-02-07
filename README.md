@@ -1,2 +1,2 @@
 # HJRHKY
- Website untuk membantu umat manusia hijrah menjadi insan yang lebih baik.
+ Website informasi seputar islam untuk hijrah menjadi insan yang lebih baik.
