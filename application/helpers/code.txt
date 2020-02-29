@@ -1,6 +1,0 @@
-01 = bpjs Kesehatan
-02 = bpjs Ketenagakerjaan
-11 = pln postpaid
-12 = pln prepaid
-21 = telkomsel Pulsa
-22 = telkomsel Pascabayar
