@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', 'Admin_C@dashboard');
+Route::get('/pertanyaan', 'Pertanyaan_C@list_admin');
+

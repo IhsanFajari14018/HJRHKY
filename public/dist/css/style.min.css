@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");@import url(icons/font-awesome/css/fontawesome-all.css);@import url(icons/themify-icons/themify-icons.css);@import url(icons/material-design-iconic-font/css/materialdesignicons.min.css);.search-box .app-search .form-control{border-radius:0px}.topbar .dropdown-menu .with-arrow>span{transform:rotate(45deg);-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg);-o-transform:rotate(45deg);-moz-transform:rotate(45deg)}
+
+/* Custom CSS */
+/* MDI Icon Size */
+.mdi-18 {font-size: 18px;}
+.mdi-24 {font-size: 24px;}
+.mdi-36 {font-size: 36px;}
+.mdi-48 {font-size: 48px;}
+.mdi-72 {font-size: 72px;}
+
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
