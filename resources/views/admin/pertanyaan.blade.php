@@ -44,12 +44,8 @@
                                 <td>2020/10/20 15:23:59</td>
                                 <td>Bagaimana caranya istiqomah dalam hijrah?</td>
                                 <td>
-                                    <a class="btn btn-info" href="#">
-                                        Jawab
-                                    </a>
-                                    <a class="btn btn-danger" href="#">
-                                        Hapus
-                                    </a>
+                                    <a class="btn btn-info" href="#"> Jawab </a>
+                                    <a class="btn btn-danger" href="#"> Hapus </a>
                                 </td>
                             </tr>
                             <tr>
@@ -58,12 +54,8 @@
                                 <td>2020/10/23 11:13:19</td>
                                 <td>Saya sudah menikah, tapi masih ingat mantan. Gimana cara melupakannya?</td>
                                 <td>
-                                    <a class="btn btn-info" href="#">
-                                        Jawab
-                                    </a>
-                                    <a class="btn btn-danger" href="#">
-                                        Hapus
-                                    </a>
+                                    <a class="btn btn-info" href="#"> Jawab </a>
+                                    <a class="btn btn-danger" href="#"> Hapus </a>
                                 </td>
                             </tr>
                         </tbody>
