@@ -30,38 +30,41 @@
                     <table id="zero_config" class="table table-striped table-bordered">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>Tanggal</th>
+                                <th>Pertanyaan</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>2011/04/25</td>
-                                <td>$320,800</td>
+                                <td>1</td>
+                                <td>Jajang</td>
+                                <td>2020/10/20 15:23:59</td>
+                                <td>Bagaimana caranya istiqomah dalam hijrah?</td>
+                                <td>
+                                    <a class="btn btn-info" href="#">
+                                        Jawab
+                                    </a>
+                                    <a class="btn btn-danger" href="#">
+                                        Hapus
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Garrett Winters</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>63</td>
-                                <td>2011/07/25</td>
-                                <td>$170,750</td>
-                            </tr>
-                            <tr>
-                                <td>Ashton Cox</td>
-                                <td>Junior Technical Author</td>
-                                <td>San Francisco</td>
-                                <td>66</td>
-                                <td>2009/01/12</td>
-                                <td>$86,000</td>
+                                <td>2</td>
+                                <td>Konelo</td>
+                                <td>2020/10/23 11:13:19</td>
+                                <td>Saya sudah menikah, tapi masih ingat mantan. Gimana cara melupakannya?</td>
+                                <td>
+                                    <a class="btn btn-info" href="#">
+                                        Jawab
+                                    </a>
+                                    <a class="btn btn-danger" href="#">
+                                        Hapus
+                                    </a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
