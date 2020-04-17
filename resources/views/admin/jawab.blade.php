@@ -1,11 +1,11 @@
 @extends('admin/master_a')
 
 @section('html_title')
-<title>Daftar Pertanyaan | Admin HJRHKY</title>
+<title>Jawab Pertanyaan | Admin HJRHKY</title>
 @endsection
 
 @section('page_title')
-<h4 class="page-title">Daftar Pertanyaan</h4>
+<h4 class="page-title">Jawab Pertanyaan</h4>
 @endsection
 
 @section('styling')
