@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', 'Admin_C@dashboard');
-Route::get('/pertanyaan', 'Pertanyaan_C@list_admin');
+Route::get('/dashboard', 'Admin@dashboard');
+Route::get('/dashboard/pertanyaan', 'Pertanyaan@pertanyaan');
+Route::get('/dashboard/jawab', 'Pertanyaan@jawab');
 
