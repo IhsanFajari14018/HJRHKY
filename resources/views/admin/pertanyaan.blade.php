@@ -38,26 +38,18 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach($questioner as $q)
                             <tr>
-                                <td>1</td>
-                                <td>Jajang</td>
-                                <td>2020/10/20 15:23:59</td>
-                                <td>Bagaimana caranya istiqomah dalam hijrah?</td>
+                                <td>{{ $q->id }}</td>
+                                <td>{{ $q->name }}</td>
+                                <td>{{ $q->created_at }}</td>
+                                <td>{{ $q->question }}</td>
                                 <td>
                                     <a class="btn btn-info" href="#"> Jawab </a>
                                     <a class="btn btn-danger" href="#"> Hapus </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Konelo</td>
-                                <td>2020/10/23 11:13:19</td>
-                                <td>Saya sudah menikah, tapi masih ingat mantan. Gimana cara melupakannya?</td>
-                                <td>
-                                    <a class="btn btn-info" href="#"> Jawab </a>
-                                    <a class="btn btn-danger" href="#"> Hapus </a>
-                                </td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
