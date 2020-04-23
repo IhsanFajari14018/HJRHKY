@@ -23,11 +23,14 @@ Route::get('/dashboard/jawab', 'Pertanyaan@jawab');
 
 //form bertanya dan submit
 Route::get('/ask', 'Pertanyaan@tanya');
-Route::get('/submit-pertanyaan', 'Pertanyaan@doTanya');
+Route::post('/submit-pertanyaan', 'Pertanyaan@doTanya');
 
 //form jawab dan submit
 Route::get('/answer', 'Pertanyaan@jawab');
 Route::get('/submit-jawaban', 'Pertanyaan@doJawab');
+
+//delete questioner
+Route::get('/remove-question/{id}', 'Pertanyaan@hapus');
 
 //debugger
 Route::get('/test', 'Pertanyaan@test');
