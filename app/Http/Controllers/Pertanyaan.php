@@ -18,7 +18,7 @@ class Pertanyaan extends Controller
 
     public function tanya()
     {
-        return view('public/tanya');
+        return view('public/jawab');
     }
 
     public function doTanya(Request $request)
