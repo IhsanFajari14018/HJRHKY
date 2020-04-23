@@ -82,7 +82,7 @@
      * Basic Table - with disabled auto order  *
      *******************************************/
     $('#zero_config').DataTable({
-        "ordering": false
+        "order": [[ 0, "desc"]]
     });
 </script>
 @endsection
