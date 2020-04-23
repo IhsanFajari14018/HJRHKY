@@ -46,7 +46,7 @@
                                 <td>{{ $q->question }}</td>
                                 <td>
                                     <a class="btn btn-info" href="#"> Jawab </a>
-                                    <a class="btn btn-danger" href="#"> Hapus </a>
+                                    <a class="btn btn-danger" href="/remove-question/{{ $q->id }}"> Hapus </a>
                                 </td>
                             </tr>
                             @endforeach
@@ -78,9 +78,11 @@
 <script src="../../assets/extra-libs/multicheck/jquery.multicheck.js"></script>
 <script src="../../assets/extra-libs/DataTables/datatables.min.js"></script>
 <script>
-    /****************************************
-     *       Basic Table                   *
-     ****************************************/
-    $('#zero_config').DataTable();
+    /*******************************************
+     * Basic Table - with disabled auto order  *
+     *******************************************/
+    $('#zero_config').DataTable({
+        "ordering": false
+    });
 </script>
 @endsection
