@@ -59,19 +59,27 @@
     </header>
 
     <body>
-        <!-- ## MAIN -->
 
+        <!-- ## MAIN -->
         <section class="mt-5">
 
-            <h1 class="text-center"> Ajukan Pertanyaan </h1>
-
             <div class="container mt-4">
+
+                <h1 class="text-center"> Ajukan Pertanyaan </h1>
+
                 <div class="row">
                     <div class="col-md-8 mx-auto">
 
+                        @if($message = Session::get('sukses'))
+                        <div class="alert alert-success alert-block">
+                            <button type="button" class="close" data-dismiss="alert">x</button>
+                            <strong>{{ $message }}</strong>
+                        </div>
+                        @endif
+
                         <div class="card">
                             <div class="card-body">
-                                <form method="POST" action="#">
+                                <form method="POST" action="/submit-pertanyaan">
 
                                     {{csrf_field()}}
 
@@ -119,7 +127,6 @@
                 <a href="#">Back to top</a>
             </p>
         </footer> -->
-
 
         <div class="fixed-bottom bg-light pt-2 pb-3">
             <div class="container">
