@@ -13,25 +13,21 @@ class Pertanyaan extends Controller
     public function pertanyaan()
     {
         $questioner = M_Pertanyaan::all();
-        foreach ($questioner as $q ) {
-            echo $q->name;
-            echo "<br>";
-            echo $q->email;
-            echo "<br>";
-            echo $q->pertanyaan;
-            echo "<br>";
-        }
-
-        // return view('admin/pertanyaan');
+        return view('admin/pertanyaan', ['questioner' => $questioner]);
     }
 
-    public function doTanya()
+    public function tanya()
+    {
+        return view('public/tanya');
+    }
+
+    public function doTanya(Request $request)
     {
         $questioner = new M_Pertanyaan;
 
-        $questioner->name = 'Oji';
-        $questioner->email = '0jhunt@hotmail.com';
-        $questioner->pertanyaan = "Cara biar ga dibully mantan gimana ustadz??";
+        $questioner->name = $request->name;
+        $questioner->email = $request->email;
+        $questioner->question = $request->question;
 
         $questioner->save();
         echo "Submited!";
@@ -44,7 +40,7 @@ class Pertanyaan extends Controller
 
     public function doJawab()
     {
-        
+        // return 
     }
 
     public function test()
