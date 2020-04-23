@@ -20,6 +20,14 @@ Route::get('/dashboard', 'Admin@dashboard');
 //get pertanyaan, add jawaban
 Route::get('/dashboard/pertanyaan', 'Pertanyaan@pertanyaan');
 Route::get('/dashboard/jawab', 'Pertanyaan@jawab');
+
+//form bertanya dan submit
+Route::get('/ask', 'Pertanyaan@tanya');
 Route::get('/submit-pertanyaan', 'Pertanyaan@doTanya');
+
+//form jawab dan submit
+Route::get('/answer', 'Pertanyaan@jawab');
 Route::get('/submit-jawaban', 'Pertanyaan@doJawab');
+
+//debugger
 Route::get('/test', 'Pertanyaan@test');
