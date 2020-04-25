@@ -28,7 +28,7 @@
                     <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
 
                     <!-- Logo -->
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/ask">
                         <!-- Logo icon -->
                         <b class="logo-icon p-l-10">
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
