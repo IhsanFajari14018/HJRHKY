@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon Icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/assets/images/favicon.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/assets/images/HJRHKY_icon_2.png') }}">
     <!-- Page Title -->
     <title>Ajukan Pertanyaan | HJRHKY</title>
 
