@@ -9,10 +9,10 @@
 @endsection
 
 @section('styling')
-<link rel="stylesheet" type="text/css" href="{{ asset('/assets/extra-libs/multicheck/multicheck.css') }}">
-<link href="{{ asset('/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}" rel="stylesheet">
-<link href="{{ asset('/dist/css/style.min.css') }}" rel="stylesheet">
-<link href="{{ asset('/dist/css/style.css') }}" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ secure_asset('/assets/extra-libs/multicheck/multicheck.css') }}">
+<link href="{{ secure_asset('/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}" rel="stylesheet">
+<link href="{{ secure_asset('/dist/css/style.min.css') }}" rel="stylesheet">
+<link href="{{ secure_asset('/dist/css/style.css') }}" rel="stylesheet">
 @endsection
 
 @section('main_content')

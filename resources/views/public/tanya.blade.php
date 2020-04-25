@@ -9,12 +9,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon Icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/assets/images/favicon.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ secure_asset('/assets/images/HJRHKY_icon_2.png') }}">
     <!-- Page Title -->
     <title>Ajukan Pertanyaan | HJRHKY</title>
 
     <!-- Custom CSS -->
-    <link href="{{ asset('/assets_2/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/assets_2/css/bootstrap.min.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -158,9 +158,9 @@
             </div>
         </div> -->
 
-        <script src="{{ asset('/assets/libs/jquery/dist/jquery.min.js') }}"></script>
-        <script src="{{ asset('/assets_2/js/bootstrap.js') }}"></script>
-        <script src="{{ asset('/assets_2/js/bootstrap.min.js') }}"></script>
+        <script src="{{ secure_asset('/assets/libs/jquery/dist/jquery.min.js') }}"></script>
+        <script src="{{ secure_asset('/assets_2/js/bootstrap.js') }}"></script>
+        <script src="{{ secure_asset('/assets_2/js/bootstrap.min.js') }}"></script>
     </body>
 
 </body>
