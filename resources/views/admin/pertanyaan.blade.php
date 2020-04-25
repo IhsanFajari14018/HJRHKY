@@ -9,10 +9,10 @@
 @endsection
 
 @section('styling')
-<link rel="stylesheet" type="text/css" href="{{ asset('/assets/extra-libs/multicheck/multicheck.css') }}">
-<link href="{{ asset('/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}" rel="stylesheet">
-<link href="{{ asset('/dist/css/style.min.css') }}" rel="stylesheet">
-<link href="{{ asset('/dist/css/style.css') }}" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ secure_asset('/assets/extra-libs/multicheck/multicheck.css') }}">
+<link href="{{ secure_asset('/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}" rel="stylesheet">
+<link href="{{ secure_asset('/dist/css/style.min.css') }}" rel="stylesheet">
+<link href="{{ secure_asset('/dist/css/style.css') }}" rel="stylesheet">
 @endsection
 
 @section('breadcrumb')
@@ -60,23 +60,23 @@
 @endsection
 
 @section('queries')
-<script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="{{ secure_asset('/assets/libs/jquery/dist/jquery.min.js') }}"></script>
 <!-- Bootstrap tether Core JavaScript -->
-<script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
-<script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="{{ secure_asset('/assets/libs/popper.js/dist/umd/popper.min.js') }}"></script>
+<script src="{{ secure_asset('/assets/libs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 <!-- slimscrollbar scrollbar JavaScript -->
-<script src="../../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-<script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
+<script src="{{ secure_asset('/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js') }}"></script>
+<script src="{{ secure_asset('/assets/extra-libs/sparkline/sparkline.js') }}"></script>
 <!--Wave Effects -->
-<script src="../../dist/js/waves.js"></script>
+<script src="{{ secure_asset('/dist/js/waves.js') }}"></script>
 <!--Menu sidebar -->
-<script src="../../dist/js/sidebarmenu.js"></script>
+<script src="{{ secure_asset('/dist/js/sidebarmenu.js') }}"></script>
 <!--Custom JavaScript -->
-<script src="../../dist/js/custom.min.js"></script>
+<script src="{{ secure_asset('/dist/js/custom.min.js') }}"></script>
 <!-- this page js -->
-<script src="../../assets/extra-libs/multicheck/datatable-checkbox-init.js"></script>
-<script src="../../assets/extra-libs/multicheck/jquery.multicheck.js"></script>
-<script src="../../assets/extra-libs/DataTables/datatables.min.js"></script>
+<script src="{{ secure_asset('/assets/extra-libs/multicheck/datatable-checkbox-init.js') }}"></script>
+<script src="{{ secure_asset('/assets/extra-libs/multicheck/jquery.multicheck.js') }}"></script>
+<script src="{{ secure_asset('/assets/extra-libs/DataTables/datatables.min.js') }}"></script>
 <script>
     /*******************************************
      * Basic Table - with disabled auto order  *
