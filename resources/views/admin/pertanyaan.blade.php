@@ -31,7 +31,7 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Nama</th>
+                                <!-- <th>Nama</th> -->
                                 <th>Tanggal</th>
                                 <th>Pertanyaan</th>
                                 <th>Action</th>
@@ -41,7 +41,7 @@
                             @foreach($questioner as $q)
                             <tr>
                                 <td>{{ $q->id }}</td>
-                                <td>{{ $q->name }}</td>
+                                <!-- <td>{{ $q->name }}</td> -->
                                 <td>{{ $q->created_at }}</td>
                                 <td>{{ $q->question }}</td>
                                 <td>
