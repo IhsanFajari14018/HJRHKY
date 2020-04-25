@@ -27,7 +27,7 @@ Route::post('/submit-pertanyaan', 'Pertanyaan@doTanya');
 
 //form jawab dan submit
 Route::get('/answer', 'Pertanyaan@jawab');
-Route::get('/submit-jawaban', 'Pertanyaan@doJawab');
+Route::post('/submit-jawaban', 'Pertanyaan@doJawab');
 
 //delete questioner
 Route::get('/remove-question/{id}', 'Pertanyaan@hapus');
