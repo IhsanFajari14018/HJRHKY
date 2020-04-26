@@ -26,7 +26,7 @@ class Pertanyaan extends Controller
     {
         $questioner = new M_Pertanyaan;
 
-        $questioner->name = "-";
+        $questioner->name = $request->name;
         $questioner->email = $request->email;
         $questioner->question = $request->question;
 
