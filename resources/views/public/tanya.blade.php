@@ -83,7 +83,7 @@
 
                                     {{csrf_field()}}
 
-                                    <!-- <div class="form-group row">
+                                    <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Nama</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" placeholder="" value="">
@@ -92,7 +92,7 @@
                                                 <small class="text-muted">Klik untuk bertanya secara anonymous</small>
                                             </label>
                                         </div>
-                                    </div> -->
+                                    </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Email</label>
                                         <div class="col-sm-10">
