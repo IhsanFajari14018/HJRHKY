@@ -128,11 +128,10 @@
             </p>
         </footer> -->
 
-        <div class="fixed-bottom bg-light pt-2 pb-3">
+        <!-- <div class="fixed-bottom bg-light pt-2 pb-3">
             <div class="container">
                 <div class="text-muted text-center">
                     <p class="mb-0">HJRHKY {{ date('Y')}}</p>
-                    <!-- <p class="mb-0"> | </p> -->
                     <small>
                         Ingin ikut berkontribusi mengembangkan website ini?
                         <a href="https://github.com/IhsanFajari14018/HJRHKY" target="_blank">
@@ -141,7 +140,7 @@
                     </small>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- <div class="d-flex justify-content-center mt-auto">
             <div class="d-flex justify-content-between col-md-8 col-md-offset-2 mb-3 mt-5">
