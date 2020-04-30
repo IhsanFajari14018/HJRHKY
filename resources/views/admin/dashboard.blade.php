@@ -9,8 +9,8 @@
 @endsection
 
 @section('styling')
-<link href="{{ secure_asset('/assets/libs/flot/css/float-chart.css') }}" rel="stylesheet">
-<link href="{{ secure_asset('/dist/css/style.min.css') }}" rel="stylesheet">
+<link href="{{ asset('/assets/libs/flot/css/float-chart.css') }}" rel="stylesheet">
+<link href="{{ asset('/dist/css/style.min.css') }}" rel="stylesheet">
 @endsection
 
 @section('breadcrumb')
@@ -127,7 +127,7 @@
             <div class="comment-widgets scrollable">
                 <!-- Comment Row -->
                 <div class="d-flex flex-row comment-row m-t-0">
-                    <div class="p-2"><img src="{{ secure_asset('assets/images/users/1.jpg') }}" alt="user" width="50" class="rounded-circle"></div>
+                    <div class="p-2"><img src="{{ asset('assets/images/users/1.jpg') }}" alt="user" width="50" class="rounded-circle"></div>
                     <div class="comment-text w-100">
                         <h6 class="font-medium">Jajang Konelo</h6>
                         <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
@@ -135,13 +135,15 @@
                             <span class="text-muted float-right">April 14, 2020</span>
                             <button type="button" class="btn btn-cyan btn-sm">Edit</button>
                             <button type="button" class="btn btn-success btn-sm">Publish</button>
-                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                            <a href="/ask">
+                                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <!-- Comment Row -->
                 <div class="d-flex flex-row comment-row">
-                    <div class="p-2"><img src="{{ secure_asset('assets/images/users/4.jpg') }}" alt="user" width="50" class="rounded-circle"></div>
+                    <div class="p-2"><img src="{{ asset('assets/images/users/4.jpg') }}" alt="user" width="50" class="rounded-circle"></div>
                     <div class="comment-text active w-100">
                         <h6 class="font-medium">Ade Korek</h6>
                         <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
@@ -155,7 +157,7 @@
                 </div>
                 <!-- Comment Row -->
                 <div class="d-flex flex-row comment-row">
-                    <div class="p-2"><img src="{{ secure_asset('assets/images/users/5.jpg') }}" alt="user" width="50" class="rounded-circle"></div>
+                    <div class="p-2"><img src="{{ asset('assets/images/users/5.jpg') }}" alt="user" width="50" class="rounded-circle"></div>
                     <div class="comment-text w-100">
                         <h6 class="font-medium">Asep Panci</h6>
                         <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
@@ -179,18 +181,18 @@
 <!-- ============================================================== -->
 <!-- All Jquery -->
 <!-- ============================================================== -->
-<script src="{{ secure_asset('/assets/libs/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ asset('/assets/libs/jquery/dist/jquery.min.js') }}"></script>
 <!-- Bootstrap tether Core JavaScript -->
-<script src="{{ secure_asset('/assets/libs/popper.js/dist/umd/popper.min.js') }}"></script>
-<script src="{{ secure_asset('/assets/libs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-<script src="{{ secure_asset('/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js') }}"></script>
-<script src="{{ secure_asset('/assets/extra-libs/sparkline/sparkline.js') }}"></script>
+<script src="{{ asset('/assets/libs/popper.js/dist/umd/popper.min.js') }}"></script>
+<script src="{{ asset('/assets/libs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js') }}"></script>
+<script src="{{ asset('/assets/extra-libs/sparkline/sparkline.js') }}"></script>
 <!--Wave Effects -->
-<script src="{{ secure_asset('/dist/js/waves.js') }}"></script>
+<script src="{{ asset('/dist/js/waves.js') }}"></script>
 <!--Menu sidebar -->
-<script src="{{ secure_asset('/dist/js/sidebarmenu.js') }}"></script>
+<script src="{{ asset('/dist/js/sidebarmenu.js') }}"></script>
 <!--Custom JavaScript -->
-<script src="{{ secure_asset('/dist/js/custom.min.js') }}"></script>
+<script src="{{ asset('/dist/js/custom.min.js') }}"></script>
 <!--This page JavaScript -->
-<script src="{{ secure_asset('/dist/js/pages/dashboards/dashboard1.js') }}"></script>
+<script src="{{ asset('/dist/js/pages/dashboards/dashboard1.js') }}"></script>
 @endsection
