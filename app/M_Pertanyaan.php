@@ -9,7 +9,5 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class M_Pertanyaan extends Model
 {
     protected $table = 'questions';
-
     use SoftDeletes;
-
 }
