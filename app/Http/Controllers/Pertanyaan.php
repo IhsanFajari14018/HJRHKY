@@ -47,13 +47,17 @@ class Pertanyaan extends Controller
         }
     }
 
-    public function jawab()
+    public function jawab($id)
     {
+        // $questioner = M_Pertanyaan::find('id')->get();
+
         return view('admin/jawab');
     }
 
     public function doJawab()
     {
+        // $questioner = M_Pertanyaan::find('id')->get();
+
         // return 
     }
 
