@@ -26,9 +26,17 @@ class Admin extends Controller
     */
     public function dashboard()
     {
-        if (Session::get('user')['status'] != 1) {
+        $user = Session::get('user');
+        if (!empty($user)) {
+            if ($user['status'] != 1) {
+                return redirect('/login');
+            } else {
+                //you can proceed
+            }
+        } else {
             return redirect('/login');
         }
+        
         return view('admin/dashboard');
     }
 }
