@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/assets/images/HJRHKY_icon_2.png') }}">
-    <title>Matrix Template - The Ultimate Multipurpose admin template</title>
+    <title>Login Admin HJRHKY</title>
     <!-- Custom CSS -->
     <link href="{{ asset('/dist/css/style.min.css') }}" rel="stylesheet">
 
