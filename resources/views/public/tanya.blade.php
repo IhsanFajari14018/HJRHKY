@@ -5,7 +5,7 @@
 @endsection
 
 @section('styling')
-<link href="{{ secure_asset('/assets_2/css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('/assets_2/css/bootstrap.min.css') }}" rel="stylesheet">
 @endsection
 
 @section('main')
@@ -25,7 +25,7 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <form method="POST" action="{{ url('/submit-pertanyaan') }}">
+                        <form method="POST" action="/submit-pertanyaan">
 
                             {{csrf_field()}}
 
@@ -69,9 +69,9 @@
 @endsection
 
 @section('script')
-<script src="{{ secure_asset('/assets/libs/jquery/dist/jquery.min.js') }}"></script>
-<script src="{{ secure_asset('/assets_2/js/bootstrap.js') }}"></script>
-<script src="{{ secure_asset('/assets_2/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('/assets/libs/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ asset('/assets_2/js/bootstrap.js') }}"></script>
+<script src="{{ asset('/assets_2/js/bootstrap.min.js') }}"></script>
 
 <script>
 document.getElementById('anonymous_check').onchange = function() {
