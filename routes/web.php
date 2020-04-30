@@ -34,3 +34,12 @@ Route::get('/remove-question/{id}', 'Pertanyaan@hapus');
 
 //debugger
 Route::get('/test', 'Pertanyaan@test');
+
+
+//Authenticate
+Route::get('/login', 'Authentication@login');
+Route::post('/validate-login', 'Authentication@validateLogin');
+Route::get('/logout', 'Authentication@logout');
+
+// Auth::routes();
+// Route::get('/home', 'HomeController@index')->name('home');
