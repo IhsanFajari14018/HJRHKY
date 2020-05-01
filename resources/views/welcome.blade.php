@@ -86,7 +86,7 @@
 
                 <div class="links">
                     <a href="https://bit.ly/hjrhky-ask">Ask</a>
-                    <a href="#">Q&A</a>
+                    <a href="/Q-A">Q&A</a>
                     <a href="https://www.instagram.com/hijrahkuyofficial/">Instagram</a>
                     <!-- <a href="https://blog.laravel.com">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>
