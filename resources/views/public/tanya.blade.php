@@ -58,9 +58,10 @@
 
                 <small class="mt-2">
                     <em> * Catatan:
-                        <br> 1. Email dan nama yang tercantum di email akan kami rahasiakan.
-                        <br> 2. Pertanyaan yang tidak sempat kami jawab pada sesi,
-                        insyaAllah jawabannya akan kami kirimkan ke email Anda.</em>
+                        <br> 1. Nama dan email yang tercantum di sistem akan kami rahasiakan.
+                        <br> 2. Pertanyaan yang tidak sempat kami jawab pada sesi kajiaan,
+                        insyaAllah jawabannya akan kami kirimkan melalui email.
+                    </em>
                 </small>
             </div>
         </div>
@@ -74,9 +75,9 @@
 <script src="{{ asset('/assets_2/js/bootstrap.min.js') }}"></script>
 
 <script>
-document.getElementById('anonymous_check').onchange = function() {
-    document.getElementById('name_form').disabled = this.checked;
-    document.getElementById('name_form').value = "Anonymous";
-};
+    document.getElementById('anonymous_check').onchange = function() {
+        document.getElementById('name_form').readOnly = this.checked;
+        document.getElementById('name_form').value = "Anonymous";
+    };
 </script>
 @endsection
