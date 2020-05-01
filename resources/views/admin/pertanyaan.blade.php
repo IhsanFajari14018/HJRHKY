@@ -36,6 +36,7 @@
                                 <th>Tanggal</th>
                                 <th>Pertanyaan</th>
                                 <th>Action</th>
+                                <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -47,9 +48,17 @@
                                 <td>{{ $q->created_at }}</td>
                                 <td>{{ $q->question }}</td>
                                 <td>
-                                    <a class="btn btn-info" href="#"> Jawab </a>
+                                    <a class="btn btn-info" href="/answer/{{ $q->id }}"> Jawab </a>
                                     <a class="btn btn-danger" href="/remove-question/{{ $q->id }}"> Hapus </a>
                                 </td>
+                                @if (isset($q->answers->answer))
+                                <td>
+                                    <div class="badge badge-pill badge-success">Answered</div>
+                                </td>
+                                @else
+                                <td>
+                                </td>
+                                @endif
                             </tr>
                             @endforeach
                         </tbody>
@@ -58,6 +67,7 @@
             </div>
         </div>
     </div>
+
 </div>
 @endsection
 
@@ -84,7 +94,9 @@
      * Basic Table - with disabled auto order  *
      *******************************************/
     $('#zero_config').DataTable({
-        "order": [[ 0, "desc"]]
+        "order": [
+            [0, "desc"]
+        ]
     });
 </script>
 @endsection
