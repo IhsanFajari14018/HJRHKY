@@ -23,15 +23,16 @@
                     <small>{{ date_format($q->created_at, 'g:i a \o\n l\, jS F Y') }}</small>
                 </div>
             </div>
-            <div class="col-md-12 text-muted">
-                <!-- Question  -->
-                <p class="mb-3">{{ $q->question }}</p>
 
-                <!-- Answer -->
-                <div class="text-right">
-                    <?php echo $q->answers->answer ?>
-                    <small>&mdash; Admin HJRHKY</small>
-                </div>
+            <!-- Question  -->
+            <div class="col-md-8 text-muted">
+                <p class="mb-3">{{ $q->question }}</p>
+            </div>
+
+            <!-- Answer -->
+            <div class="offset-md-4 col-md-8 text-muted text-right mt-4">
+                <?php echo $q->answers->answer ?>
+                <small>&mdash; Admin HJRHKY</small>
             </div>
         </div>
 
