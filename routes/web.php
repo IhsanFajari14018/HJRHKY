@@ -22,7 +22,6 @@ Route::get('/dashboard/pertanyaan', 'Pertanyaan@pertanyaan');
 Route::get('/dashboard/jawab', 'Pertanyaan@jawab');
 Route::get('/dashboard/jawaban', 'Pertanyaan@jawaban');
 
-
 //form bertanya dan submit
 Route::get('/ask', 'Pertanyaan@tanya');
 Route::post('/submit-pertanyaan', 'Pertanyaan@doTanya');
@@ -31,12 +30,14 @@ Route::post('/submit-pertanyaan', 'Pertanyaan@doTanya');
 Route::get('/answer/{id}', 'Pertanyaan@jawab');
 Route::post('/submit-jawaban/{id}', 'Pertanyaan@doJawab');
 
+//Q&A
+Route::get('/Q-A', 'Pertanyaan@qa');
+
 //delete questioner
 Route::get('/remove-question/{id}', 'Pertanyaan@hapus');
 
 //debugger
 Route::get('/test', 'Pertanyaan@test');
-
 
 //Authenticate
 Route::get('/login', 'Authentication@login');
