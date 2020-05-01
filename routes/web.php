@@ -20,14 +20,16 @@ Route::get('/dashboard', 'Admin@dashboard');
 //get pertanyaan, add jawaban
 Route::get('/dashboard/pertanyaan', 'Pertanyaan@pertanyaan');
 Route::get('/dashboard/jawab', 'Pertanyaan@jawab');
+Route::get('/dashboard/jawaban', 'Pertanyaan@jawaban');
+
 
 //form bertanya dan submit
 Route::get('/ask', 'Pertanyaan@tanya');
 Route::post('/submit-pertanyaan', 'Pertanyaan@doTanya');
 
 //form jawab dan submit
-Route::get('/answer', 'Pertanyaan@jawab');
-Route::post('/submit-jawaban', 'Pertanyaan@doJawab');
+Route::get('/answer/{id}', 'Pertanyaan@jawab');
+Route::post('/submit-jawaban/{id}', 'Pertanyaan@doJawab');
 
 //delete questioner
 Route::get('/remove-question/{id}', 'Pertanyaan@hapus');
