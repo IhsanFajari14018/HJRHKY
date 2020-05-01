@@ -5,11 +5,13 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-
-class M_Pertanyaan extends Model
+class Questions extends Model
 {
     protected $table = 'questions';
-
     use SoftDeletes;
 
+    public function answers()
+    {
+    	return $this->hasOne('App\Answers');
+    }
 }

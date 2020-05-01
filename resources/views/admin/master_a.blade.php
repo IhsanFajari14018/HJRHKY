@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon Icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ secure_asset('/assets/images/HJRHKY_icon_2.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/assets/images/HJRHKY_icon_2.png') }}">
     <!-- Page Title -->
     @yield('html_title')
     <!-- Custom CSS -->
@@ -39,7 +39,7 @@
                         <!-- Logo text -->
                         <span class="logo-text ml-4">
                             <!-- dark Logo text -->
-                            <img src="{{ secure_asset('/assets/images/logo_hjrhky_dashboard.jpg') }}" alt="homepage" class="light-logo" />
+                            <img src="{{ asset('/assets/images/logo_hjrhky_dashboard.jpg') }}" alt="homepage" class="light-logo" />
 
                         </span>
                         <!-- Logo icon -->
@@ -170,7 +170,7 @@
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ secure_asset('assets/images/users/1.jpg') }}" alt="user" class="rounded-circle" width="31"></a>
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ asset('assets/images/users/1.jpg') }}" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
                                 <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
                                 <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
@@ -198,15 +198,23 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav" class="p-t-30">
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('dashboard') }}" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a></li>
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('dashboard') }}" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a></li> -->
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('dashboard/pertanyaan') }}" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Pertanyaan</span></a> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('dashboard/jawaban') }}" aria-expanded="false"><i class="mdi mdi-all-inclusive"></i><span class="hide-menu">Jawaban</span></a> </li>
 
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-account-key"></i><span class="hide-menu">Authentication </span></a>
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Authentication </span></a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item"><a href="{{ url('dashboard/pertanyaan') }}" class="sidebar-link"><i class="mdi mdi-all-inclusive"></i><span class="hide-menu"> Pertanyaan </span></a></li>
+                                <li class="sidebar-item"><a href="{{ url('dashboard/jawaban') }}" class="sidebar-link"><i class="mdi mdi-all-inclusive"></i><span class="hide-menu"> Jawaban </span></a></li>
+                            </ul>
+                        </li> -->
+
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-account-key"></i><span class="hide-menu">Authentication </span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="authentication-login.html" class="sidebar-link"><i class="mdi mdi-all-inclusive"></i><span class="hide-menu"> Login </span></a></li>
                                 <li class="sidebar-item"><a href="authentication-register.html" class="sidebar-link"><i class="mdi mdi-all-inclusive"></i><span class="hide-menu"> Register </span></a></li>
                             </ul>
-                        </li>
+                        </li> -->
 
                     </ul>
                 </nav>
@@ -225,7 +233,7 @@
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
                                     @yield('breadcrumb')
                                 </ol>
                             </nav>

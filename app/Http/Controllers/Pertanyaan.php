@@ -3,17 +3,31 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\M_Pertanyaan;
 use Illuminate\Http\Request;
-use Session;
+use Illuminate\Support\Facades\DB;
 
+use Session;
+use App\Answers;
+use App\Questions;
 
 class Pertanyaan extends Controller
 {
 
     public function pertanyaan()
     {
-        $questioner = M_Pertanyaan::orderBy('id', 'desc')->get();
+        $questioner = Questions::orderBy('id', 'desc')->get();
+
+        // foreach ($questioner as $value) {
+        //     echo $value->id." - ";
+        //     echo $value->question."<br>";
+        //     if(!isset($value->answers->answer)){
+        //         echo "NULL";
+        //     }else{
+        //         echo $value->answers->answer;
+        //     }
+        //     echo "<br><br>";
+        // }
+
         return view('admin/pertanyaan', ['questioner' => $questioner]);
     }
 
@@ -24,9 +38,9 @@ class Pertanyaan extends Controller
 
     public function doTanya(Request $request)
     {
-        $questioner = new M_Pertanyaan;
+        $questioner = new Questions;
 
-        $questioner->name = "-";
+        $questioner->name = $request->name;
         $questioner->email = $request->email;
         $questioner->question = $request->question;
 
@@ -47,14 +61,31 @@ class Pertanyaan extends Controller
         }
     }
 
-    public function jawab()
+    public function jawab($id)
     {
-        return view('admin/jawab');
+        $question = Questions::find($id);
+        return view('admin/jawab', ['question' => $question]);
     }
 
-    public function doJawab()
+    public function jawaban()
     {
-        // return 
+        $question = Questions::with('answers')->has('answers')->get();
+        return view('admin/jawaban', ['question' => $question]);
+    }
+
+    public function doJawab(Request $request, $id)
+    {
+        $answer = new Answers();
+
+        $answer->answer = $request->editordata;
+        $answer->questions_id = $id;
+
+        $answer->save();
+
+        //set session
+        $this->setResponse('sukses');
+
+        return redirect('/dashboard/pertanyaan');
     }
 
     /**
@@ -62,7 +93,7 @@ class Pertanyaan extends Controller
      */
     public function hapus($id)
     {
-        $questioner = M_Pertanyaan::find($id);
+        $questioner = Questions::find($id);
         $questioner->delete();
 
         return redirect()->back();

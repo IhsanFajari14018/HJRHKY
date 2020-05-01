@@ -1,11 +1,11 @@
 @extends('admin/master_a')
 
 @section('html_title')
-<title>Daftar Pertanyaan | Admin HJRHKY</title>
+<title>Daftar Jawaban | Admin HJRHKY</title>
 @endsection
 
 @section('page_title')
-<h4 class="page-title">Daftar Pertanyaan</h4>
+<h4 class="page-title">Daftar Jawaban</h4>
 @endsection
 
 @section('styling')
@@ -16,7 +16,7 @@
 @endsection
 
 @section('breadcrumb')
-<li class="breadcrumb-item active" aria-current="page">Pertanyaan</li>
+<li class="breadcrumb-item active" aria-current="page">Daftar Jawaban</li>
 @endsection
 
 @section('main_content')
@@ -29,36 +29,23 @@
                 <div class="table-responsive">
                     <table id="zero_config" class="table table-striped table-bordered">
                         <thead>
-                            <tr>
+                            <tr class="text-center">
                                 <th>No</th>
-                                <th>Nama</th>
-                                <th>Email</th>
-                                <th>Tanggal</th>
+                                <th>Dari</th>
+                                <th>Dijawab Tanggal</th>
                                 <th>Pertanyaan</th>
-                                <th>Action</th>
-                                <th>Status</th>
+                                <th>Jawaban</th>
+                                <!-- <th>Status</th> -->
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($questioner as $q)
+                            @foreach($question as $q)
                             <tr>
                                 <td>{{ $q->id }}</td>
-                                <td>{{ $q->name }}</td>
-                                <td>{{ $q->email }}</td>
-                                <td>{{ $q->created_at }}</td>
+                                <td class="text-center">{{ $q->name }} <br> | <br> {{ $q->email }}</td>
+                                <td>{{ $q->answers->created_at }}</td>
                                 <td>{{ $q->question }}</td>
-                                <td>
-                                    <a class="btn btn-info" href="/answer/{{ $q->id }}"> Jawab </a>
-                                    <a class="btn btn-danger" href="/remove-question/{{ $q->id }}"> Hapus </a>
-                                </td>
-                                @if (isset($q->answers->answer))
-                                <td>
-                                    <div class="badge badge-pill badge-success">Answered</div>
-                                </td>
-                                @else
-                                <td>
-                                </td>
-                                @endif
+                                <td><?php echo $q->answers->answer ?></td>
                             </tr>
                             @endforeach
                         </tbody>
