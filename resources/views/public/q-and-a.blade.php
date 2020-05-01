@@ -20,7 +20,7 @@
             <div class="col-12">
                 <h6 class="mb-0">{{ $q->name }}</h6>
                 <div class="mb-3">
-                    <small>{{ date_format($q->created_at, 'g:ia \o\n l jS F Y') }}</small>
+                    <small>{{ date_format($q->created_at, 'g:i a \o\n l\, jS F Y') }}</small>
                 </div>
             </div>
             <div class="col-md-12 text-muted">
