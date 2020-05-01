@@ -88,6 +88,12 @@ class Pertanyaan extends Controller
         return redirect('/dashboard/pertanyaan');
     }
 
+    public function qa(){
+        $question = Questions::with('answers')->has('answers')->get();
+        return view('public/q-and-a', ['question' => $question]);
+
+    }
+
     /**
      * Using soft deletes
      */
