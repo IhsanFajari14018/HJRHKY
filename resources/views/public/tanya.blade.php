@@ -11,7 +11,7 @@
 @section('main')
 <section class="mt-5">
     <div class="container mt-4">
-        <h1 class="text-center"> Ajukan Pertanyaan </h1>
+        <h1 class="text-center mb-4"> Ajukan Pertanyaan </h1>
 
         <div class="row">
             <div class="col-md-8 mx-auto">
