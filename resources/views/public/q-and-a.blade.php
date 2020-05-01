@@ -12,7 +12,7 @@
 <section class="mt-5">
     <div class="container mt-4">
         <h1 class="text-center"> Q&A </h1>
-        <p class="text-center lead mb-5"> Question And Answer </p>
+        <p class="text-center lead mb-5"> Question and Answer </p>
 
 
         @foreach($question as $q)
