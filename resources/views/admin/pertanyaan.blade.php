@@ -31,9 +31,9 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Nama</th>
-                                <th>Email</th>
+                                <th>Penanya</th>
                                 <th>Tanggal</th>
+                                <th>Hashtags</th>
                                 <th>Pertanyaan</th>
                                 <th>Action</th>
                                 <th>Status</th>
@@ -43,9 +43,19 @@
                             @foreach($questioner as $q)
                             <tr>
                                 <td>{{ $q->id }}</td>
-                                <td>{{ $q->name }}</td>
-                                <td>{{ $q->email }}</td>
+                                <td class="text-center">
+                                    {{ $q->email }}
+                                    <br>|<br>
+                                    {{ $q->name }}
+                                </td>
                                 <td>{{ $q->created_at }}</td>
+                                <td>
+                                    @foreach($q->hashtags as $t)
+                                    <div class="badge badge-pill badge-primary">
+                                        {{$t->tag}}
+                                    </div>
+                                    @endforeach
+                                </td>
                                 <td>{{ $q->question }}</td>
                                 <td>
                                     <a class="btn btn-info" href="/answer/{{ $q->id }}"> Jawab </a>
