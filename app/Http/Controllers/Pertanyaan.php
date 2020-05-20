@@ -53,7 +53,6 @@ class Pertanyaan extends Controller
             ->orderBy('id', 'desc')
             ->first();
 
-        print_r($id);
         $this->addHashtags($request->hashtag, $id->id);
 
         //set session
@@ -63,22 +62,19 @@ class Pertanyaan extends Controller
             $this->setResponse('error');
         }
 
-        // return redirect('/ask');
+        return redirect('/ask');
     }
 
     private function addHashtags($Htags, $id)
     {
-        print_r($Htags);
-        echo "<br>";
         $splittedHtags = explode(" ", $Htags);
-        print_r($splittedHtags);
 
         foreach ($splittedHtags as $key => $htag) {
             $hashtags = new Hashtags; //must be reseted
             $hashtags->tag = $htag;
             $hashtags->questions_id = $id;
             $hashtags->save();
-            echo "Hashtag inserted!";
+            // echo "Hashtag inserted!";
         }
     }
 
@@ -87,7 +83,7 @@ class Pertanyaan extends Controller
         if ($response == 'sukses') {
             Session::flash('sukses', 'Pertanyaan Anda sudah kami terima. Terimakasih!');
         } else {
-            //wrong $response
+            Session::flash('error', 'Gagal. Silahkan masukan kembali pertanyaan Anda.');
         }
     }
 
