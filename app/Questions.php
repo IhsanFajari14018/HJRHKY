@@ -14,4 +14,8 @@ class Questions extends Model
     {
     	return $this->hasOne('App\Answers');
     }
+
+    public function hashtags(){
+        return $this->hasMany('App\Hashtags');
+    }
 }
