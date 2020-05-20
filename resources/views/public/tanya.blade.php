@@ -46,7 +46,13 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Pertanyaan</label>
+                                <label class="col-sm-2 col-form-label">Hashtag</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="hashtag" class="form-control" placeholder="Cth: #puasa #zakat #nikah" value="" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Pertanyaan</label>
                                 <div class="col-sm-10">
                                     <textarea class="form-control" name="question" rows="3" placeholder="Masukan pertanyaanmu disini" required></textarea>
                                 </div>
