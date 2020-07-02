@@ -17,7 +17,7 @@ class CreateQuestionsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email');
-            $table->text('pertanyaan');
+            $table->text('question');
             $table->softDeletes('deleted_at');
             $table->timestamps();
         });
